@@ -18,6 +18,7 @@ cd qqapi && cp lib/*.rb you_project/lib/
 现在我只是封装了部分的接口有些还没有做.如果你也有分享精神能加一些更好.
 
 联系方式: 
+
 	QQ:    　　　563252833 
 
 	email: 　　　lb563@foxmail.com　| milegamemrli@gmail.com
