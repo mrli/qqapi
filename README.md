@@ -12,6 +12,7 @@ cd qqapi && cp lib/*.rb you_project/lib/
 =====
 请先执行 bundle install # cd qqapi && bundle install
 其实也没有什么依赖的gem包,主要是用一个"pry"用于调试
+测试文件为: tx_sdk_test.rb
 
 分享
 =====
