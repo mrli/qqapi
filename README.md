@@ -13,5 +13,10 @@ cd qqapi && cp lib/*.rb you_project/lib/
 请先执行 bundle install # cd qqapi && bundle install
 其实也没有什么依赖的gem包,主要是用一个"pry"用于调试
 
-注意: 现在我只是封装了部分的接口,还有些没有做,希望你在学习和使用时贡献力量 :)
-	    在提交时写清楚加了哪些接口和功能等
+分享
+=====
+现在我只是封装了部分的接口有些还没有做.如果你也有分享精神能加一些更好.
+联系方式: 
+	QQ:    　　　563252833 
+	email: 　　　lb563@foxmail.com　| milegamemrli@gmail.com
+	blog:				mrli.github.com 
