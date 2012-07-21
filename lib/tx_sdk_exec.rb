@@ -118,9 +118,7 @@ class OpenQQ
 
       #base64编码
       sig_str = Base64.encode64(tmp_str).gsub("\n","")#.gsub("+","%20") #X2/7qhS1yZ7m3joN76VuskDlJDk=
-      puts "====================sig==================="
-      puts "kg86HZFb4750m93AiPiE3X3lMeE==============="
-      puts sig_str
+      
       # binding.pry
       return sig_str
     end
@@ -152,16 +150,19 @@ class OpenQQ
 end
 
 
-open = OpenQQ.new(100641389,'471c6fb8a99d31b9c8c808eb33cb8475','GUI')
+open = OpenQQ.new(100645471,'e42a082e2052bd564b1d60900078c116','rails')
 open.pf = "qzone"
+
 
 # 测试的时候需要更新 openid 和 openkey 每次登录后都会有变化
 # 可以在 http://opensns.qq.com/apps/tools 这里得到你的 QQ 的 openid 和 openkey
-openid = 'AF985DBE4C198FD5587A95B1A52D64E1'
-openkey = '54640E454973AFBE896929D5AFD3E7C6'
+# 使用firbug就可以直接找到应用的openid和openkey
+# http://qzone.devapp.open.qq.com/cgi-bin/devapp?qz_height=1000&qz_width=760&openid=00000000000000000000000097927FDC&openkey=D0AD261E00034F78641F3DF6AEC12E40&pf=qzone&pfkey=2307774e38c3ad9ee340d8eacdfb4cd3&qz_ver=6&appcanvas=1&params=&via=QZ.HashRefresh
+openid = '915EA331A17C0B3FE83131128AD7D1A4'
+openkey = 'B1B1305E2268FA304769472B70BBABBC'
 
-puts open.get_user_info(openid,openkey).inspect
-# # binding.pry
+# puts open.get_user_info(openid,openkey).inspect
+# binding.pry
 #{"ret"=>0, "is_lost"=>0, "nickname"=>"mile", "gender"=>"女", "country"=>"中国", "province"=>"北京", "city"=>"朝阳", "figureurl"=>"http://thirdapp1.qlogo.cn/qzopenapp/0843a96cac25a31055f3a80984866325ae2b85125dd126e6d802ff383ed6724e/50", "is_yellow_vip"=>0, "is_yellow_year_vip"=>0, "yellow_vip_level"=>0, "is_yellow_high_vip"=>0}
 
 
@@ -195,8 +196,6 @@ puts open.get_user_info(openid,openkey).inspect
 
 # puts open.check_spam("1","hello",openid,openkey).inspect
 #{"ret"=>0, "is_lost"=>0, "result"=>0, "forbidden_time"=>0}
-
-
 
 
 
